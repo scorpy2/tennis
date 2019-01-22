@@ -8,7 +8,6 @@
       <th>Name</th>
       <th>Starting date</th>
       <th>Ending time</th>
-      <th>Player</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +18,6 @@
         <td><%= tournament.name %></td>
         <td><%= tournament.starting_date %></td>
         <td><%= tournament.ending_time %></td>
-        <td><%= tournament.player %></td>
         <td><%= link_to 'Show', tournament %></td>
         <td><%= link_to 'Edit', edit_tournament_path(tournament) %></td>
         <td><%= link_to 'Destroy', tournament, method: :delete, data: { confirm: 'Are you sure?' } %></td>

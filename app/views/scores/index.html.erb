@@ -18,10 +18,10 @@
     <% @scores.each do |score| %>
       <tr>
         <td><%= score.match_date %></td>
-        <td><%= score.player_one %></td>
-        <td><%= score.player_two %></td>
+        <td><%= score.player_one.name %></td>
+        <td><%= score.player_two.name%></td>
         <td><%= score.score %></td>
-        <td><%= score.winner %></td>
+        <td><%= score.winner.name%></td>
         <td><%= link_to 'Show', score %></td>
         <td><%= link_to 'Edit', edit_score_path(score) %></td>
         <td><%= link_to 'Destroy', score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
