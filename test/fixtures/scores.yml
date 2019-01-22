@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match_date: date
+  player_one: one
+  player_two: one
+  score: MyString
+  winner: one
+
+two:
+  match_date: date
+  player_one: two
+  player_two: two
+  score: MyString
+  winner: two

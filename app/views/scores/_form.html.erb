@@ -1,0 +1,42 @@
+<%= form_with(model: score, local: true) do |form| %>
+  <% if score.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(score.errors.count, "error") %> prohibited this score from being saved:</h2>
+
+      <ul>
+      <% score.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :match_date %>
+    <%= form.date_field :match_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_one_id %>
+    <%= form.collection_select :player_one_id, Player.all, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_two_id %>
+    <%= form.collection_select :player_two_id, Player.all, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.text_field :score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :winner_id %>
+    <%= form.collection_select :winner_id, Player.all, :id, :name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
