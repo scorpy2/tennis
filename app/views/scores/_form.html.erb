@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :tournament %>
+    <%= form.collection_select :tournament_id, Tournament.all, :id, :name %>
+  </div>
+
+  <div class="field">
     <%= form.label :match_date %>
     <%= form.date_field :match_date %>
   </div>
