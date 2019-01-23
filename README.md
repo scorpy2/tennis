@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We care about tennis. We really do :) This is our attempt to collect, save and share
+all the tennis scores (mostly amateur tennis), we even have taken part in some
+of these games. This is our tennis history.
 
-Things you may want to cover:
+We have chosen:
 
-* Ruby version
+* Ruby 2.6.0
 
-* System dependencies
+* Puma, nginx on Debian 9 (Linode)
 
-* Configuration
+* Just fetch the source, bundle install and you're set
 
-* Database creation
+* Database: PostgreSQL 10
 
-* Database initialization
+* Database initialization: rails db:migrate && db:seed
 
-* How to run the test suite
+* Testing: rspec
 
-* Services (job queues, cache servers, search engines, etc.)
+* Services we are about to use: RabbitMQ, cloudfront
 
-* Deployment instructions
+* Deployment instructions: routine capistrano 3 (wip)
 
-* ...
