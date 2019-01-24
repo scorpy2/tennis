@@ -6,13 +6,17 @@
 </p>
 
 <p>
+  <strong>Tournament:</strong>
+  <%= @score.tournament.name %>
+</p>
+<p>
   <strong>Player one:</strong>
-  <%= @score.player_one %>
+  <%= @score.player_one.name %>
 </p>
 
 <p>
   <strong>Player two:</strong>
-  <%= @score.player_two %>
+  <%= @score.player_two.name%>
 </p>
 
 <p>
@@ -22,7 +26,7 @@
 
 <p>
   <strong>Winner:</strong>
-  <%= @score.winner %>
+  <%= @score.winner.name %>
 </p>
 
 <%= link_to 'Edit', edit_score_path(@score) %> |

@@ -1,3 +1,4 @@
 class Tournament < ApplicationRecord
-  belongs_to :player
+  has_many :players
+  has_many :scores
 end
